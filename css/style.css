@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../fonts/inter-v7-latin_cyrillic-regular.woff2') format('woff2'),
+  url('../fonts/inter-v7-latin_cyrillic-regular.woff') format('woff');
+}
+
+:root {
+  --dark-grey: #212b31;
+  --light-grey: #72787d;
+  --white: #fff;
+}
+
+html {
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+}
+
+.demo-btn {
+  font-family: Arial;
+  color: var(--white);
+  background-color: var(--dark-grey);
+}
+
+/* header */
+.header__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 102px;
+  padding: 26px 31px;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.nav__list {
+  display: flex;
+  margin-right: 20px;
+}
+
+.nav__link {
+  color: var(--light-grey);
+}
+
+.nav__link_active {
+  color: #036fc7;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.header__button {
+  padding: 9px 20px;
+  font-size: 14px;
+}
+
+
