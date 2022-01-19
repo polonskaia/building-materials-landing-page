@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 @font-face {
@@ -38,6 +39,16 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .container {
@@ -102,7 +113,7 @@ ul {
 
 /* hero */
 .section-hero__container {
-  margin-bottom: 142px;
+  margin-bottom: 150px;
 }
 
 .section-hero__heading {
@@ -173,6 +184,182 @@ ul {
 .section-hero__guarantees-description {
   margin: 0;
   text-align: center;
+  line-height: 24px;
+  color: var(--light-grey);
+}
+
+/* section-help */
+.section-help__container {
+  margin-bottom: 70px;
+}
+
+.section-help__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-help__heading {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--dark-grey);
+}
+
+.sectiion-help__description {
+  padding-bottom: 489px;
+  max-width: 1015px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--light-grey);
+  background-image: url('../img/bg-3.jpg');
+  background-repeat: no-repeat;
+  background-position: top 136px center;
+}
+
+.section-help__motivating-text {
+  margin-bottom: 168px;
+  max-width: 780px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--dark-grey);
+}
+
+.section-help__care-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  padding-left: 192px;
+  padding-bottom: 84px;
+  background-image: url('../img/bg-4.jpg');
+  background-repeat: no-repeat;
+  background-position: center right 242px;
+}
+
+.section-help__care-heading {
+  margin-bottom: 15px;
+  max-width: 490px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  color: var(--dark-grey);
+}
+
+.section-help__care-description {
+  margin-bottom: 28px;
+  max-width: 540px;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--light-grey);
+}
+
+.section-care__tagline {
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--dark-grey);
+  background-image: url('../img/Rectangle.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+/* section-partners */
+.section-partners__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 84px;
+  padding: 56px 0 54px;
+  max-width: 1088px;
+  border-top: 1px solid #eef2f3;
+  border-bottom: 1px solid #eef2f3;
+}
+
+.section-partners__image-container {
+  width: 180px;
+}
+
+.section-partners__image-container:nth-child(-n+5) {
+  margin-right: 39px;
+}
+
+.section-partners__image-container:nth-child(-n+6) {
+  margin-bottom: 9px;
+}
+
+/* section-about-us */
+.section-about-us__container {
+  margin-bottom: 143px;
+}
+
+.section-about-us__heading {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--dark-grey);
+}
+
+.section-about-us__description {
+  margin: 0 auto 28px;
+  max-width: 830px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--light-grey);
+}
+
+.section-about-us__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-about-us__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 500px;
+  max-width: 1056px;
+  height: 272px;
+  background-repeat: no-repeat;
+}
+.section-about-us__item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.section-about-us__item:nth-child(1) {
+  background-image: url('../img/bg-5.jpg');
+  background-position: bottom right 62px;
+}
+
+.section-about-us__item:nth-child(2) {
+  align-items: flex-end;
+  padding-right: 0;
+  padding-left: 535px;
+  background-image: url('../img/bg-6.jpg');
+  background-position: bottom left 80px;
+}
+
+.section-about-us__item:nth-child(3) {
+  background-image: url('../img/bg-7.jpg');
+  background-position: bottom right 56px;
+}
+
+.section-about-us__item-heading {
+  margin-bottom: 19px;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 18px;
+  color: var(--dark-grey);
+}
+
+.section-about-us__item-description {
+  font-size: 16px;
   line-height: 24px;
   color: var(--light-grey);
 }
