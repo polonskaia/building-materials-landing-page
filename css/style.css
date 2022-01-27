@@ -75,6 +75,7 @@ ul {
   border: 1px solid #dadedf;
   font-size: 18px;
   color: var(--dark-grey);
+  background-color: var(--white);
 }
 
 /* header */
@@ -478,14 +479,193 @@ ul {
 }
 
 /* section-reliability */
+.section-reliability__container {
+  margin-bottom: 144px;
+  padding-left: 192px;
+  padding-right: 192px;
+}
+
 .section-reliability__heading {
-  margin: 0 auto 17px;
+  margin: 0 auto;
   max-width: 263px;
-  padding: 25px 33px;
+  padding: 25px 33px 20px;
   font-size: 32px;
   font-weight: 400;
   color: var(--dark-grey);
   background-image: url('../img/reliability.svg');
   background-repeat: no-repeat;
   background-position: top right;
+}
+
+.section-reliability__description {
+  margin: 0 auto 48px;
+  max-width: 857px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--light-grey);
+}
+
+.section-reliability__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+
+.section-reliability__item {
+  text-align: center;
+  max-width: 332px;
+  padding-top: 69px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.section-reliability__item:nth-child(1) {
+  background-image: url('../img/benefit-icon-4.svg');
+}
+
+.section-reliability__item:nth-child(2) {
+  background-image: url('../img/benefit-icon-5.svg');
+}
+
+.section-reliability__item:nth-child(3) {
+  background-image: url('../img/benefit-icon-6.svg');
+}
+
+.section-reliability__item-heading {
+  margin-bottom: 11px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--dark-grey);
+}
+
+.section-reliability__item-description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light-grey);
+}
+
+.section-reliability__advertisement-container {
+  display: flex;
+  align-items: center;
+  padding: 41px 40px 41px 104px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-image: url('../img/reliability-2.svg');
+  background-position: center left 40px;
+  background-color: #f6f8f9;
+  ;
+}
+
+.section-reliability__advertisement-text {
+  margin-right: 66px;
+  font-size: 18px;
+  color: var(--dark-grey);
+}
+
+.section-reliability__advertisement-text_strong {
+  font-weight: 500;
+}
+
+.section-reliability__advertisement-button {
+  padding: 14px 24px;
+}
+
+/* section-app-advertising */
+.section-app-advertising {
+  background-color: var(--dark-grey);
+  background-image: url('../img/bg-8.png');
+  background-repeat: no-repeat;
+  background-position: top 143px right;
+}
+
+.section-app-advertising__container {
+  padding: 150px 192px 118px 192px;
+  color: var(--white);
+}
+
+.section-app-advertising__top-content {
+  margin-bottom: 142px;
+  max-width: 589px;
+}
+
+.section-app-advertising__heading {
+  margin-bottom: 55px;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.section-app-advertising__list {
+  margin-bottom: 65px;
+  padding-left: 18px;
+  list-style: circle;
+}
+
+.section-app-advertising__item {
+  padding-left: 23px;
+}
+
+.section-app-advertising__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.section-app-advertising__item-heading {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.section-app-advertising__item-description {
+  line-height: 24px;
+  opacity: 0.75;
+}
+
+.section-app-advertising__button_demo {
+  margin-right: 16px;
+  padding: 15px 23px;
+  color: var(--dark-grey);
+  background-color: var(--white);
+}
+
+.section-app-advertising__button_more {
+  padding: 13px 24px;
+  background-color: transparent;
+  color: var(--white);
+}
+
+.section-app-advertising__benefits-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-app-advertising__benefits-item {
+  padding-top: 73px;
+  max-width: 340px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.section-app-advertising__benefits-item:nth-child(1) {
+  background-image: url('../img/benefit-icon-7.svg');
+}
+
+.section-app-advertising__benefits-item:nth-child(2) {
+  background-image: url('../img/benefit-icon-8.svg');
+}
+
+.section-app-advertising__benefits-item:nth-child(3) {
+  background-image: url('../img/benefit-icon-9.svg');
+}
+
+.benefits-item__heading {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.benefits-item__description {
+  line-height: 24px;
+  opacity: 0.75;
 }
